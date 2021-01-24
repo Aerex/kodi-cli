@@ -347,6 +347,7 @@ while getopts "yqoprstiudfhvmnjklx" opt; do
 	    ;;
 
         t)  
+            IFS="\"" # Allow empty space between characters
             send_text $2
             handle_keys
             ;;
